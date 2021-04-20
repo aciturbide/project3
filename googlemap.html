@@ -1,57 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Important Places</title>
-  <!--Link Stylesheet(s)-->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <script src="index.js"></script>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>Important Places</title>
+        <!--Link Stylesheet(s)-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+        <!--google maps api-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSb6Y1OIGoJSbzhdSUgkrAIgelhNLQ5jw&callback=initMap&libraries=&v=weekly" async defer> </script>
+        <!--javascript-->
+        <script src="js/index.js"></script>
+      </head>
+      <body>
+        <nav id="main-navbar">
+        <div id="navbar-container">
+          <ul>
+            <li><a href="index.html">Resume</a></li>
+            <li><a href="worklife.html">Work Life</a></li>
+            <li><a href="interestshobbies.html">Interests & Hobbies</a></li>
+            <li id="onpage"><a href="googlemap.html">Important Places</a></li>
+          </ul>
+        </div>
+      </nav>
 
-  <!--Fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+        <h1 id="subtitle">Important Places</h1>
 
-  <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          const uluru = { lat: 41.926210, lng: -87.786350};
-          // The map, centered at Uluru
-          const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: uluru,
-          });
-          // The marker, positioned at Uluru
-          const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-          });
-        }
-      </script>
-</head>
-<body>
-  <h1 id="header">Angie Iturbide</h1>
-  <!--Top Navigation-->
-  <nav id="main-navbar">
-          <div id="navbar-container">
-            <ul>
-              <li><a href="index.html">Resume</a></li>
-              <li><a href="worklife.html">Work Life</a></li>
-              <li><a href="interestshobbies.html">Interests & Hobbies</a></li>
-              <li id="onpage"><a href="googlemap.html">Important Places</a></li>
-            </ul>
-          </div>
-        </nav>
-
-<h1 id="subtitle">Important Places</h1>
-
-  <body>
-    <!--The div element for the map -->
-    <div id="map"></div>
-
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSb6Y1OIGoJSbzhdSUgkrAIgelhNLQ5jw&callback=initMap&libraries=&v=weekly"
-        async
-      ></script>
+        <div id="map"></div>
+        <div class="map-box">
+          <h2>Map Key</h2>
+          <p><strong>Red Marker:</strong> IIT campus</p>
+          <p><strong>Flag:</strong> My neighborhood</p>
+          <p><strong>Circle:</strong> My current highschool</p>
+        </div>
+      </body>
+      </html>
