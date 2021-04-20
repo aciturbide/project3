@@ -33,3 +33,4 @@ function initMap() {
       animation: google.maps.Animation.DROP,
       title: "My Neighborhood",
   });
+}
