@@ -90,10 +90,19 @@ img {
   width: 70px;
   height: auto;
 }
-/* Set the size of the div element that contains the map */
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
+/* google map */
+#map{
+  position: relative;
+  margin-top: 3em;
+  height: 40em;
   width: 100%;
-  /* The width is the width of the web page */
+}
+.map-box{
+  position: relative;
+  left: 30em;
+  box-shadow: 10px 10px 5px #777777;
+  width: 18em;
+  height: auto;
+  margin: 1.925em;
+  padding: 1.625em;
 }
