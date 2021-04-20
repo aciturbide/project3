@@ -96,3 +96,14 @@ img {
     height: 600px;
     width: 100%;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #D7BABA;
+  }
+  /* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+  div.gallery {
+    display: none;
+  }
+}
+}
