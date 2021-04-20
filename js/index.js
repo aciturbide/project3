@@ -1,27 +1,35 @@
+var map;
+
 function initMap() {
-  const jewelosco = { lat: 41.926208, lng: -87.786346};
-  const highschool = { lat: 41.981240, lng: -87.707670};
-  const neighborhood = { lat: 41.8949, lng: -87.7654};
-  const IIT = { lat: 41.83429528028157, lng: -87.62756505033413 }
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 11,
-    center: chicago,
+  map = new google.maps.Map(document.getElementById("map"), {
+  center: {lat: 41.83429528028157, lng: -87.62756505033413 }, //iit
+  zoom: 16,
   });
 
-  const jewelmarker = new google.maps.Marker({
-    position: jewelosco,
-    map: map,
+  //Markers
+  const iit = new google.maps.Marker ({
+    position: {lat: 41.83429528028157, lng: -87.62756505033413},
+    map,
+    animation: google.maps.Animation.DROP,
+    title: "IIT",
   });
-  const iitmarker = new google.maps.Marker({
-    position: IIT,
-    map: map,
+
+  const jewelosco = new google.maps.Marker ({
+    position: {lat: 41.926208, lng: -87.786346},
+    map,
+    animation: google.maps.Animation.DROP,
+    title: "Jewel Osco",
   });
-  const hsmarker = new google.maps.Marker({
-    position: highschool,
-    map: map,
+
+  const highschool = new google.maps.Marker ({
+      position: {lat: 41.981240, lng: -87.707670},
+      map,
+      animation: google.maps.Animation.DROP,
+      title: "Northside College Preparatory - High School",
   });
-  const nmarker = new google.maps.Marker({
-    position: neighborhood,
-    map: map,
+  const neighborhood = new google.maps.Marker ({
+      position: { lat: 41.8949, lng: -87.7654},
+      map,
+      animation: google.maps.Animation.DROP,
+      title: "My Neighborhood",
   });
-}

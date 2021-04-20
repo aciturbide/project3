@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:wght@100&family=Sacramento&display=swap" rel="stylesheet">
         <!--google maps api-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSb6Y1OIGoJSbzhdSUgkrAIgelhNLQ5jw&callback=initMap&libraries=&v=weekly" async defer> </script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSb6Y1OIGoJSbzhdSUgkrAIgelhNLQ5jw&callback=initMap"></script>
         <!--javascript-->
         <script src="js/index.js"></script>
       </head>
@@ -26,36 +26,10 @@
           </ul>
         </div>
       </nav>
-        <h1 id="subtitle">Important Places</h1>
-        <!--<div id="map"></div>-->
-<script>
-        function initMap() {
-          const jewelosco = { lat: 41.926208, lng: -87.786346};
-          const highschool = { lat: 41.981240, lng: -87.707670};
-          const neighborhood = { lat: 41.8949, lng: -87.7654};
-          const IIT = { lat: 41.83429528028157, lng: -87.62756505033413 }
-          const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 11,
-            center: chicago,
-          });
-
-          const jewelmarker = new google.maps.Marker({
-            position: jewelosco,
-            map: map,
-          });
-          const iitmarker = new google.maps.Marker({
-            position: IIT,
-            map: map,
-          });
-          const hsmarker = new google.maps.Marker({
-            position: highschool,
-            map: map,
-          });
-          const nmarker = new google.maps.Marker({
-            position: neighborhood,
-            map: map,
-          });
-        }
-    </script>
+        <div id="main">
+          <h1 id="subtitle">Important Places</h1>
+                 <div id="map"></div>
+             </div>
+         </div>
       </body>
       </html>
