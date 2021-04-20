@@ -24,3 +24,4 @@ function initMap() {
     position: neighborhood,
     map: map,
   });
+}
