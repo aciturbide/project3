@@ -12,6 +12,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:wght@100&family=Sacramento&display=swap" rel="stylesheet">
 
+  <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          const uluru = { lat: -25.344, lng: 131.036 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+        }
+      </script>
 </head>
 <body>
   <h1 id="header">Angie Iturbide</h1>
@@ -29,13 +46,12 @@
 
 <h1 id="subtitle">Important Places</h1>
 
-   <!--The div element for the map -->
-   <div id="map"></div>
+  <body>
+    <!--The div element for the map -->
+    <div id="map"></div>
 
-   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-   <script
-     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSb6Y1OIGoJSbzhdSUgkrAIgelhNLQ5jw&callback=initMap&libraries=&v=weekly"
-     async
-   ></script>
- </body>
-</html>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSb6Y1OIGoJSbzhdSUgkrAIgelhNLQ5jw&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
