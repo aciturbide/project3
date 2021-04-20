@@ -2,7 +2,7 @@ var map;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-  center: {lat: 41.83429528028157, lng: -87.62756505033413 }, //iit
+  center: {lat: 41.8781, lng: -87.6298}, //chicago
   zoom: 16,
   });
 
